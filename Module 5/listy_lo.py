@@ -28,8 +28,11 @@ if __name__ == '__main__':
 #Input fun
     number_list = []
     while True:
-        number_list = list(map(float, input("Enter the list numbers separated by space ").strip().split()))
-        if ('stop' in number_list):
+        number_list_input = list(input("Enter number to be calculated. Enter stop to stop: ").strip())
+        number_list.append(number_list_input)
+        if ('s' in number_list_input):
             print('exiting')
+            number_list.pop()
             break
     print(number_list)
+    
