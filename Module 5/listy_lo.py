@@ -22,5 +22,14 @@ if __name__ == '__main__':
     Breakfast = Split_breakfast 
     print(Breakfast)
 
-#
-    len(Breakfast)
+#How long is breakfast
+    print(len(Breakfast))
+
+#Input fun
+    number_list = []
+    while True:
+        number_list = list(map(float, input("Enter the list numbers separated by space ").strip().split()))
+        if ('stop' in number_list):
+            print('exiting')
+            break
+    print(number_list)

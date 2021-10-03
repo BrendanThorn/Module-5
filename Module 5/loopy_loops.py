@@ -7,18 +7,30 @@ if __name__ == '__main__':
     starter2 = pokemon[1]
     starter3 = pokemon[2]
 
-    #my_name = tuple('Brendan')
-    #'i' in my_name
+#Is i in my name
+    my_name = tuple('Brendan')
+    'i' in my_name
 
-    #for N in range(2,11):
-     #   print(N)
-    
+#counting
+    for N in range(2,11):
+        print(N)
+
+#counting up 
     M = 2
     B = 11
-    #while M < B:
-    #    print(M)
-     #   M += 1
+    while M < B:
+        print(M)
+        M += 1
+
+#string print
 
     starter_string = 'This is a simple string'
     for x in starter_string:
         print(x)
+
+#nesseded loop
+    nested_loopset = ('this', 'is', 'a', 'simple', 'set')
+    i = 0
+    while i < len(nested_loopset):
+        print(nested_loopset[i] *3)
+        i += 1 
